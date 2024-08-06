@@ -9,6 +9,19 @@
    <div>
     Coba tebak isinya apa
    </div>
+   <p>Rangkuman Git</p>
+   <p>
+    Git adalah sistem kontrol versi yang digunakan untuk mengelola proyek pengembangan perangkat lunak. Untuk memulai menggunakan Git, langkah pertama adalah menginisialisasi repositori baru dengan perintah git init, yang akan membuat folder .git di dalam direktori proyek. Selanjutnya, penting untuk mengatur informasi pengguna dengan perintah git config --global user.name dan git config --global user.email, sehingga setiap commit akan mencatat siapa yang membuatnya.
+
+Setelah repositori diinisialisasi dan informasi pengguna diatur, Anda dapat mulai menambahkan file baru ke repositori. Misalnya, dengan membuat file README.md dan menambahkannya ke staging area menggunakan git add README.md. Setelah itu, lakukan commit terhadap perubahan tersebut dengan menggunakan perintah git commit -m "Pesan commit" untuk menyimpan perubahan secara permanen dalam repositori. Jika Anda ingin berbagi proyek Anda dengan orang lain, Anda dapat menambahkan remote repository dengan perintah git remote add origin <URL> dan mengirimkan perubahan ke remote repository tersebut menggunakan git push -u origin master.
+
+Selama pengembangan, Anda mungkin perlu memeriksa status repositori dengan git status untuk melihat file yang telah dimodifikasi dan berada dalam staging area. Untuk melihat riwayat perubahan, gunakan git log. Git juga mendukung branching, yang memungkinkan Anda untuk membuat branch baru dengan git checkout -b nama_branch untuk mengerjakan fitur baru tanpa mengganggu branch utama. Setelah selesai, Anda bisa menggabungkan branch tersebut ke branch utama menggunakan git merge nama_branch.
+
+Git juga menyediakan kemampuan untuk menangani konflik jika ada perubahan yang bertentangan saat melakukan merge. Anda dapat menarik perubahan dari remote repository menggunakan git pull origin master untuk memastikan bahwa repositori lokal Anda tetap up-to-date. Selain itu, Anda dapat membuat tag dengan git tag -a v1.0 -m "Versi 1.0" untuk menandai rilis tertentu. Jika perlu, Anda juga dapat menghapus file dari repositori menggunakan git rm nama_file.
+
+Dengan memahami konsep dasar ini, Anda dapat menggunakan Git secara efektif untuk mengelola proyek perangkat lunak Anda.
+
+   </p>
    <script src="script.js"></script>
 </body>
 </html>
